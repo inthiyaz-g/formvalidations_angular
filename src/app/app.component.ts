@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatDialog}from '@angular/material/dialog'
-import { MyvalidationComponent } from '../myvalidation/myvalidation.component';
+import { MyvalidationComponent } from './myvalidation/myvalidation.component';
 
 
 @Component({
