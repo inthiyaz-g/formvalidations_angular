@@ -1,0 +1,25 @@
+.centerPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: row;
+}
+.mybtn{
+    background-color: #09b978;
+    height: 35px;
+    width: 160px;
+    border-color: #bcf1de;
+    border-radius: 13px;
+    border: #04AA6D 3px solid;
+    color: aliceblue;
+    cursor: pointer;
+}
+.mybtn:hover{
+    background-color: #91c78a;
+}
+.mycalss .mat-dialog-container{
+    background-color: aliceblue;
+    /* add your styles */
+  } 

@@ -1,0 +1,102 @@
+
+.mycenter{
+    text-align: left;
+    /* margin-top: 45px; */
+    align-items: center;
+    background-color: aliceblue;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+div.input{
+    display: block;
+
+}
+div.span{
+    text-align: center;
+}
+.group-gap {
+    margin-bottom: 40px;
+  }
+  .border {
+    border-width: 1px;
+  }
+  .border-grey-600 {
+    --border-opacity: 1;
+    border-color: #718096;
+    border-color: rgba(113, 128, 150, var(--border-opacity));
+  }
+  .w-full {
+    width: 80%;
+  }
+  .h-10 {
+    height: 2.5rem;
+  }
+  .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+.showtick {
+  content: "\2713";
+}
+.showimage{
+    background-image:url('/assets/tick.png');   
+background-position:right;   
+background-repeat:no-repeat;   
+padding-left:17px;
+background-size: 30px;
+
+}
+.erroImg{
+    background-image:url('/assets/er.png');   
+    background-position:right;   
+    background-repeat:no-repeat;   
+    padding-left:17px;
+    background-size: 30px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+  .mycalss .mat-dialog-container{
+    background-color: aliceblue;
+    /* add your styles */
+  } 
+ .contailer{
+    display: flex;
+    align-items: center;
+    background-color:aliceblue
+
+ }
+ .mybtn{
+    background-color: #ea3188;
+    border-radius: 6px;
+    width: 65px;
+    border: #ea3188 3px solid;
+    height: 30px;
+    color: white;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .mydisble{
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    width: 65px;
+    height: 30px;
+    color: black;
+    font-size: large;
+    opacity: 0.6;
+    cursor: not-allowed;
+    border-color:#e0e0e0 ;
+ }

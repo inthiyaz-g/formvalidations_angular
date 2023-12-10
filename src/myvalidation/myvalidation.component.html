@@ -1,0 +1,62 @@
+<!-- <h2 mat-dialog-title>Enter details</h2> -->
+<div class="mycenter">
+    <form [formGroup]="myForm">
+        <div class="group-gap">
+            <label for="pan">PAN</label>
+            <input type="text" class=" borderless border border-grey-600 w-full h-10 py-2 px-4 text-sm rounded" 
+            formControlName="pan" (keyup)="validatePan(myForm.value.pan)" maxlength="10" [ngClass]="{
+                'showimage': !myForm.controls.pan.invalid, 'erroImg': myForm.controls.pan.invalid && myForm.controls.pan.dirty}">
+
+
+            <div *ngIf="myForm.controls.pan.invalid &&  myForm.controls.pan.touched">
+                <div *ngIf="myForm.controls.pan.errors" style="color: brown;">Invalid PAN</div>
+                <div *ngIf="myForm.controls.pan.errors">EX:CDASF4422R</div>
+              </div>
+        </div>
+        <div class="group-gap">
+            <label>E-mail</label>
+
+            <input class="border border-grey-600 w-full h-10 py-2 px-4 text-sm rounded"  
+            type="text" formControlName="email"[ngClass]="{
+                'showimage': !myForm.controls.email.invalid}">
+            <div *ngIf="myForm.controls.email.invalid &&  myForm.controls.email.touched">
+                <div *ngIf="myForm.controls.email.errors" style="color: brown;">Invalid Email</div>
+                <div *ngIf="myForm.controls.email.errors">EX:email&#64;yourdomain.com</div>
+              </div>
+        </div>
+      
+        <div class="group-gap">
+            <label>Phone</label>
+
+            <input maxlength="10"  class="border border-grey-600 w-full h-10 py-2 px-4 text-sm rounded" 
+             type="text" formControlName="phone" [ngClass]="{
+                'showimage': !myForm.controls.phone.invalid}">
+            <div *ngIf="myForm.controls.phone.invalid &&  myForm.controls.phone.touched">
+                <div *ngIf="myForm.controls.phone.errors" style="color: brown;">Invalid Phone Number</div>
+                <div *ngIf="myForm.controls.phone.errors">EX:8888887776</div>
+              </div>
+        </div>
+        <div class="group-gap">
+            <label>Aadhaar</label>
+
+            <input maxlength="14" class="border border-grey-600 w-full h-10 py-2 px-4 text-sm rounded" 
+             type="text" formControlName="aadhaar" (input)="onChangeInput()" [ngClass]="{
+                'showimage': !myForm.controls.aadhaar.invalid}">
+            <div *ngIf="myForm.controls.aadhaar.invalid &&  myForm.controls.aadhaar.touched">
+                <div *ngIf="myForm.controls.aadhaar.errors" style="color: brown;">Invalid Aadhaar Number</div>
+                <div *ngIf="myForm.controls.aadhaar.errors">EX:623408673427</div>
+              </div>
+        </div>
+
+        <!-- <button mat-raised-button color="primary">Primary</button> -->
+        <div style="text-align: center; background-color: aliceblue;">
+            <!-- <h1 style="text-align: center;">jdfsdfshb</h1> -->
+            <button type="button" (click)="submitData()" style="text-align: center;" [disabled]="!myForm.valid" [ngClass]="{'mybtn':myForm.valid,'mydisble':!myForm.valid}">Submit</button>
+        
+        </div>
+    </form>
+</div>
+
+
+    <!-- <h1 style="text-align: center;">dgfsjdfjds</h1> -->
+
